@@ -1,10 +1,11 @@
 
 header{ 
-    display: grid;
-    float: center;
-    width: auto;
-    height: auto 50%;
     position: initial;
+}
+.responsive{
+    float: center; 
+    width: auto;
+    height: 10em;
 }
 body {
     background-color: #2c0d26;
@@ -19,12 +20,11 @@ nav {
     text-align: center;   
 }
 nav a {
-    float: left;
-    display: block;
-    text-align: center;
+    float: center;
+    display: inline-block;
     padding: 1em;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 a { 
     color: white;
