@@ -1,27 +1,22 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
 
-body{align-content: center}
-
-div.gallery {
-    align-content: center;
-    padding: 10px;
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 30%;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
-
-div.gallery:hover {
-    border: 1px solid #777;
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-<

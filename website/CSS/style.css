@@ -1,5 +1,6 @@
 
 header{ 
+    display: grid;
     float: center;
     width: auto;
     height: auto 50%;
@@ -61,7 +62,7 @@ figcaption {
 }
 .container {
     position: relative;
-    width: 50%;
+    width: auto;
   }
 .overlay {
     position: absolute;
@@ -78,6 +79,27 @@ figcaption {
     bottom: 0;
     height: 100%;
   }
+
+.item2 { grid-area: menu;
+    width: auto;
+    height:  40em; }
+.item3 { grid-area: main; 
+    width: 30em;
+    height: auto;}
+.item4 { grid-area: right;
+    width: auto;
+    height: 40em; }
+.item5 { grid-area: footer; 
+    width: 30em;
+    height: auto;
+}
+.grid-container {
+display: grid;
+grid-template-areas:
+'menu menu  main main right right'
+'menu menu footer footer right right';
+grid-gap: 1em;
+}
  footer {
     display: flex;
     justify-content: space-around;
@@ -89,3 +111,5 @@ figcaption {
     background-color: black;
     color: white;
 }
+
+
