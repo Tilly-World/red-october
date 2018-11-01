@@ -87,7 +87,7 @@ figcaption {
     grid-template-areas:
     'menu right'
     'main footer';
-    grid-gap: 0em;
+    grid-gap: 1em;
 }
 .overlay {
     position: absolute;
@@ -96,7 +96,8 @@ figcaption {
     right: 8em;
     background-color: white;
     overflow: hidden;
-    height:0;
+    padding: 0;
+    height: 0;
     transition: 1s ease;
   }  
 .overlay4 { 
@@ -107,8 +108,8 @@ figcaption {
     right: 2em;
     background-color: pink;
     overflow: hidden;
-    padding: 0;
-    height: 0;
+    padding: 0em;
+    height: 0em;
     transition: 1s ease;
   }  
   .overlay5 {
@@ -119,20 +120,21 @@ figcaption {
     left: 5em;
     background-color: white;
     overflow: hidden;
-    height: 0;
+    padding: 0em;
+    height: 0em;
     transition: 1s ease;
   } 
   .container:hover .overlay {
     bottom: 0;
-    height: 45em;
+    height: 53em;
   }
   .container:hover .overlay4 {
     bottom: 0;
-    height: 20em;
+    height: 32em;
   }
   .container:hover .overlay5 {
     bottom: 0;
-    height: 45em;
+    height: 53em;
   }
  footer {
     display: flex;
@@ -145,5 +147,3 @@ figcaption {
     background-color: black;
     color: white;
 }
-
-
