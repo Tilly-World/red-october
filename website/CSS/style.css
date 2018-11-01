@@ -67,17 +67,21 @@ figcaption {
     width: auto;
   }
 
-.item2 { grid-area: menu;
-    width: 30em;
+.item2 { 
+    grid-area: menu;
+    width: 25em;
     height: auto; }
-.item3 { grid-area: main; 
-    width: 40em;
+.item3 { 
+    grid-area: main; 
+    width: 30em;
     height: auto;}
-.item4 { grid-area: right;
+.item4 { 
+    grid-area: right;
     width: auto;
-    height: 50em; }
-.harley { grid-area: footer; 
-    width: 40em;
+    height: 42em; }
+.harley { 
+    grid-area: footer; 
+    width: 30em;
     height: auto;
 }
 .grid-container {
@@ -87,13 +91,13 @@ figcaption {
     grid-template-areas:
     'menu right'
     'main footer';
-    grid-gap: 1em;
+    grid-gap: 0em;
 }
 .overlay {
     position: absolute;
     bottom: 100%;
-    left: 8em;
-    right: 8em;
+    left: 5em;
+    right: 5em;
     background-color: white;
     overflow: hidden;
     padding: 0;
@@ -106,7 +110,7 @@ figcaption {
     float: center;
     left: 2em;
     right: 2em;
-    background-color: pink;
+    background-color:white;
     overflow: hidden;
     padding: 0em;
     height: 0em;
@@ -116,8 +120,8 @@ figcaption {
     position: absolute;
     align-content: center;
     bottom: 100%;
-    right: 5em;
-    left: 5em;
+    right: 2.5em;
+    left: 2.5em;
     background-color: white;
     overflow: hidden;
     padding: 0em;
@@ -126,15 +130,15 @@ figcaption {
   } 
   .container:hover .overlay {
     bottom: 0;
-    height: 53em;
+    height: 45em;
   }
   .container:hover .overlay4 {
     bottom: 0;
-    height: 32em;
+    height: 25em;
   }
   .container:hover .overlay5 {
     bottom: 0;
-    height: 53em;
+    height: 45em;
   }
  footer {
     display: flex;
