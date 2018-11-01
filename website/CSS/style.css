@@ -66,53 +66,36 @@ figcaption {
     position: relative;
     width: auto;
   }
-.overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    overflow: hidden;
-    width: 300px;
-    height:0;
-    transition: .5s ease;
-  }  
+
 .item2 { grid-area: menu;
     width: 30em;
     height: auto; }
 .item3 { grid-area: main; 
-    width: 30em;
+    width: 40em;
     height: auto;}
 .item4 { grid-area: right;
     width: auto;
     height: 50em; }
 .harley { grid-area: footer; 
-    width: 30em;
+    width: 40em;
     height: auto;
 }
 .grid-container {
-display: grid;
-grid-template-areas:
-'menu right'
-'main footer';
-grid-gap: 0em;
-}
-.container {
+    position: absolute;
     float: center;
     display: grid;
-    position: relative;
-    width: 35em;
-    padding: 1em;
+    grid-template-areas:
+    'menu right'
+    'main footer';
+    grid-gap: 0em;
 }
 .overlay {
     position: absolute;
-    align-content: center;
     bottom: 100%;
-    left: 2em;
-    right: 0em;
+    left: 8em;
+    right: 8em;
     background-color: white;
     overflow: hidden;
-    width: auto;
     height:0;
     transition: 1s ease;
   }  
@@ -120,9 +103,10 @@ grid-gap: 0em;
     position: absolute;
     bottom: 100%;
     float: center;
+    left: 2em;
+    right: 2em;
     background-color: pink;
     overflow: hidden;
-    width: 30em;
     padding: 0;
     height: 0;
     transition: 1s ease;
@@ -131,11 +115,10 @@ grid-gap: 0em;
     position: absolute;
     align-content: center;
     bottom: 100%;
-    right: 0em;
-    left: 0em;
+    right: 5em;
+    left: 5em;
     background-color: white;
     overflow: hidden;
-    width: auto;
     height: 0;
     transition: 1s ease;
   } 
